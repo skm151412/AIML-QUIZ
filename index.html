@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IC Fundamentals Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>IC INSEM-2 Quiz</h1>
+        <div id="timer">30:00</div>
+    </div>
+    <div class="container">
+        <div class="left box">
+            <form id="quizForm">
+                <div class="question" id="q1">
+                    <p>1. What is a Constraint Satisfaction Problem (CSP)?</p>
+                    <label><input type="radio" name="q1" value="A"> A) A problem where solutions must meet
+                        constraints</label>
+                    <label><input type="radio" name="q1" value="B"> B) A problem without any variables</label>
+                    <label><input type="radio" name="q1" value="C"> C) A random assignment task</label>
+                    <label><input type="radio" name="q1" value="D"> D) A game without rules</label>
+                </div>
+
+                <div class="question" id="q2">
+                    <p>2. Which is a common application of CSPs?</p>
+                    <label><input type="radio" name="q2" value="A"> A) Scheduling</label>
+                    <label><input type="radio" name="q2" value="B"> B) Eating</label>
+                    <label><input type="radio" name="q2" value="C"> C) Sleeping</label>
+                    <label><input type="radio" name="q2" value="D"> D) Walking</label>
+                </div>
+
+                <div class="question" id="q3">
+                    <p>3. What are the three main components of a CSP?</p>
+                    <label><input type="radio" name="q3" value="A"> A) Variables, Domains, Constraints</label>
+                    <label><input type="radio" name="q3" value="B"> B) Colors, Shapes, Sizes</label>
+                    <label><input type="radio" name="q3" value="C"> C) Numbers, Letters, Symbols</label>
+                    <label><input type="radio" name="q3" value="D"> D) Fruits, Vegetables, Grains</label>
+                </div>
+
+                <div class="question" id="q4">
+                    <p>4. What does a variable represent in a CSP?</p>
+                    <label><input type="radio" name="q4" value="A"> A) An entity needing a value</label>
+                    <label><input type="radio" name="q4" value="B"> B) A fixed number</label>
+                    <label><input type="radio" name="q4" value="C"> C) A color only</label>
+                    <label><input type="radio" name="q4" value="D"> D) A constraint</label>
+                </div>
+
+                <div class="question" id="q5">
+                    <p>5. What is a domain in CSP?</p>
+                    <label><input type="radio" name="q5" value="A"> A) Set of possible values for a variable</label>
+                    <label><input type="radio" name="q5" value="B"> B) A type of constraint</label>
+                    <label><input type="radio" name="q5" value="C"> C) A solution method</label>
+                    <label><input type="radio" name="q5" value="D"> D) A game board</label>
+                </div>
+
+                <div class="question" id="q6">
+                    <p>6. What is a unary constraint?</p>
+                    <label><input type="radio" name="q6" value="A"> A) Involves one variable</label>
+                    <label><input type="radio" name="q6" value="B"> B) Involves two variables</label>
+                    <label><input type="radio" name="q6" value="C"> C) Involves three or more variables</label>
+                    <label><input type="radio" name="q6" value="D"> D) No variables</label>
+                </div>
+
+                <div class="question" id="q7">
+                    <p>7. What is an example of a CSP?</p>
+                    <label><input type="radio" name="q7" value="A"> A) Sudoku</label>
+                    <label><input type="radio" name="q7" value="B"> B) Running</label>
+                    <label><input type="radio" name="q7" value="C"> C) Jumping</label>
+                    <label><input type="radio" name="q7" value="D"> D) Singing</label>
+                </div>
+
+                <div class="question" id="q8">
+                    <p>8. In N-Queens, what is the goal?</p>
+                    <label><input type="radio" name="q8" value="A"> A) Place queens without attacking each other</label>
+                    <label><input type="radio" name="q8" value="B"> B) Place kings</label>
+                    <label><input type="radio" name="q8" value="C"> C) Color the board</label>
+                    <label><input type="radio" name="q8" value="D"> D) Solve math equations</label>
+                </div>
+
+                <div class="question" id="q9">
+                    <p>9. What algorithm is commonly used for CSPs?</p>
+                    <label><input type="radio" name="q9" value="A"> A) Backtracking</label>
+                    <label><input type="radio" name="q9" value="B"> B) Addition</label>
+                    <label><input type="radio" name="q9" value="C"> C) Subtraction</label>
+                    <label><input type="radio" name="q9" value="D"> D) Multiplication</label>
+                </div>
+
+                <div class="question" id="q10">
+                    <p>10. What does backtracking do?</p>
+                    <label><input type="radio" name="q10" value="A"> A) Tries values and retreats on failure</label>
+                    <label><input type="radio" name="q10" value="B"> B) Ignores constraints</label>
+                    <label><input type="radio" name="q10" value="C"> C) Assigns random values</label>
+                    <label><input type="radio" name="q10" value="D"> D) Stops early</label>
+                </div>
+
+                <div class="question" id="q11">
+                    <p>11. What is arc consistency in CSP?</p>
+                    <label><input type="radio" name="q11" value="A"> A) Reducing domains by constraints</label>
+                    <label><input type="radio" name="q11" value="B"> B) Adding more variables</label>
+                    <label><input type="radio" name="q11" value="C"> C) Ignoring domains</label>
+                    <label><input type="radio" name="q11" value="D"> D) Coloring arcs</label>
+                </div>
+
+                <div class="question" id="q12">
+                    <p>12. What is forward checking?</p>
+                    <label><input type="radio" name="q12" value="A"> A) Removes inconsistent values after
+                        assignment</label>
+                    <label><input type="radio" name="q12" value="B"> B) Adds values</label>
+                    <label><input type="radio" name="q12" value="C"> C) Ignores checks</label>
+                    <label><input type="radio" name="q12" value="D"> D) Backtracks immediately</label>
+                </div>
+
+                <div class="question" id="q13">
+                    <p>13. In map coloring, what is the constraint?</p>
+                    <label><input type="radio" name="q13" value="A"> A) Adjacent regions different colors</label>
+                    <label><input type="radio" name="q13" value="B"> B) Same colors everywhere</label>
+                    <label><input type="radio" name="q13" value="C"> C) No colors</label>
+                    <label><input type="radio" name="q13" value="D"> D) Random colors</label>
+                </div>
+
+                <div class="question" id="q14">
+                    <p>14. What is variable ordering in CSP?</p>
+                    <label><input type="radio" name="q14" value="A"> A) Deciding order of variable assignment</label>
+                    <label><input type="radio" name="q14" value="B"> B) Ignoring order</label>
+                    <label><input type="radio" name="q14" value="C"> C) Random order</label>
+                    <label><input type="radio" name="q14" value="D"> D) Fixed colors</label>
+                </div>
+
+                <div class="question" id="q15">
+                    <p>15. What is MRV heuristic?</p>
+                    <label><input type="radio" name="q15" value="A"> A) Minimum Remaining Values</label>
+                    <label><input type="radio" name="q15" value="B"> B) Maximum Remaining Values</label>
+                    <label><input type="radio" name="q15" value="C"> C) No values</label>
+                    <label><input type="radio" name="q15" value="D"> D) Random values</label>
+                </div>
+
+                <div class="question" id="q16">
+                    <p>16. In Sudoku, what are variables?</p>
+                    <label><input type="radio" name="q16" value="A"> A) Grid cells</label>
+                    <label><input type="radio" name="q16" value="B"> B) Colors</label>
+                    <label><input type="radio" name="q16" value="C"> C) Queens</label>
+                    <label><input type="radio" name="q16" value="D"> D) Maps</label>
+                </div>
+
+                <div class="question" id="q17">
+                    <p>17. What is Minimax for?</p>
+                    <label><input type="radio" name="q17" value="A"> A) Game playing decisions</label>
+                    <label><input type="radio" name="q17" value="B"> B) Puzzle solving</label>
+                    <label><input type="radio" name="q17" value="C"> C) Coloring</label>
+                    <label><input type="radio" name="q17" value="D"> D) Scheduling</label>
+                </div>
+
+                <div class="question" id="q18">
+                    <p>18. Who is the maximizing player in Minimax?</p>
+                    <label><input type="radio" name="q18" value="A"> A) Aims to maximize score</label>
+                    <label><input type="radio" name="q18" value="B"> B) Aims to minimize score</label>
+                    <label><input type="radio" name="q18" value="C"> C) Ignores score</label>
+                    <label><input type="radio" name="q18" value="D"> D) Random player</label>
+                </div>
+
+                <div class="question" id="q19">
+                    <p>19. What is a game tree?</p>
+                    <label><input type="radio" name="q19" value="A"> A) Nodes as states, edges as moves</label>
+                    <label><input type="radio" name="q19" value="B"> B) A real tree</label>
+                    <label><input type="radio" name="q19" value="C"> C) A puzzle</label>
+                    <label><input type="radio" name="q19" value="D"> D) A map</label>
+                </div>
+
+                <div class="question" id="q20">
+                    <p>20. What does alpha-beta pruning do?</p>
+                    <label><input type="radio" name="q20" value="A"> A) Cuts unnecessary branches</label>
+                    <label><input type="radio" name="q20" value="B"> B) Adds branches</label>
+                    <label><input type="radio" name="q20" value="C"> C) Ignores tree</label>
+                    <label><input type="radio" name="q20" value="D"> D) Colors tree</label>
+                </div>
+
+                <div class="question" id="q21">
+                    <p>21. What is alpha in alpha-beta?</p>
+                    <label><input type="radio" name="q21" value="A"> A) Best max choice so far</label>
+                    <label><input type="radio" name="q21" value="B"> B) Best min choice</label>
+                    <label><input type="radio" name="q21" value="C"> C) Worst choice</label>
+                    <label><input type="radio" name="q21" value="D"> D) Random value</label>
+                </div>
+
+                <div class="question" id="q22">
+                    <p>22. What is beta in alpha-beta?</p>
+                    <label><input type="radio" name="q22" value="A"> A) Best min choice so far</label>
+                    <label><input type="radio" name="q22" value="B"> B) Best max choice</label>
+                    <label><input type="radio" name="q22" value="C"> C) Worst choice</label>
+                    <label><input type="radio" name="q22" value="D"> D) Initial infinity</label>
+                </div>
+
+                <div class="question" id="q23">
+                    <p>23. In over-constrained problems, what happens?</p>
+                    <label><input type="radio" name="q23" value="A"> A) No full solution exists</label>
+                    <label><input type="radio" name="q23" value="B"> B) Many solutions</label>
+                    <label><input type="radio" name="q23" value="C"> C) Easy solutions</label>
+                    <label><input type="radio" name="q23" value="D"> D) No constraints</label>
+                </div>
+
+                <div class="question" id="q24">
+                    <p>24. What is constraint propagation?</p>
+                    <label><input type="radio" name="q24" value="A"> A) Reduces search space early</label>
+                    <label><input type="radio" name="q24" value="B"> B) Increases space</label>
+                    <label><input type="radio" name="q24" value="C"> C) Ignores constraints</label>
+                    <label><input type="radio" name="q24" value="D"> D) Adds variables</label>
+                </div>
+
+                <div class="question" id="q25">
+                    <p>25. What is a binary CSP?</p>
+                    <label><input type="radio" name="q25" value="A"> A) Constraints on two variables</label>
+                    <label><input type="radio" name="q25" value="B"> B) On one variable</label>
+                    <label><input type="radio" name="q25" value="C"> C) On three or more</label>
+                    <label><input type="radio" name="q25" value="D"> D) No constraints</label>
+                </div>
+
+                <div class="question" id="q26">
+                    <p>26. In CSP, how are constraints represented?</p>
+                    <label><input type="radio" name="q26" value="A"> A) Relationships restricting variable
+                        values</label>
+                    <label><input type="radio" name="q26" value="B"> B) Adding more domains</label>
+                    <label><input type="radio" name="q26" value="C"> C) Ignoring variables</label>
+                    <label><input type="radio" name="q26" value="D"> D) Random assignments</label>
+                </div>
+
+                <div class="question" id="q27">
+                    <p>27. Give an example of a binary constraint.</p>
+                    <label><input type="radio" name="q27" value="A"> A) Adjacent regions ≠ colors in map
+                        coloring</label>
+                    <label><input type="radio" name="q27" value="B"> B) Single variable restriction</label>
+                    <label><input type="radio" name="q27" value="C"> C) Sum of three variables</label>
+                    <label><input type="radio" name="q27" value="D"> D) All different in row</label>
+                </div>
+
+                <div class="question" id="q28">
+                    <p>28. What is the formal representation of CSP?</p>
+                    <label><input type="radio" name="q28" value="A"> A) Triple (X, D, C)</label>
+                    <label><input type="radio" name="q28" value="B"> B) Double (X, D)</label>
+                    <label><input type="radio" name="q28" value="C"> C) Single set X</label>
+                    <label><input type="radio" name="q28" value="D"> D) No representation</label>
+                </div>
+
+                <div class="question" id="q29">
+                    <p>29. In N-Queens, what constraint avoids same diagonal?</p>
+                    <label><input type="radio" name="q29" value="A"> A) |Qi – Qj| ≠ |i-j|</label>
+                    <label><input type="radio" name="q29" value="B"> B) Qi = Qj</label>
+                    <label><input type="radio" name="q29" value="C"> C) Qi > Qj</label>
+                    <label><input type="radio" name="q29" value="D"> D) Qi < Qj</label>
+                </div>
+
+                <div class="question" id="q30">
+                    <p>30. What step in backtracking checks consistency?</p>
+                    <label><input type="radio" name="q30" value="A"> A) After choosing value, check constraints</label>
+                    <label><input type="radio" name="q30" value="B"> B) Before choosing</label>
+                    <label><input type="radio" name="q30" value="C"> C) Ignore check</label>
+                    <label><input type="radio" name="q30" value="D"> D) After all assignments</label>
+                </div>
+
+                <div class="question" id="q31">
+                    <p>31. What is higher-order constraint example?</p>
+                    <label><input type="radio" name="q31" value="A"> A) AllDifferent in Sudoku row</label>
+                    <label><input type="radio" name="q31" value="B"> B) A ≠ Green (unary)</label>
+                    <label><input type="radio" name="q31" value="C"> C) A ≠ B (binary)</label>
+                    <label><input type="radio" name="q31" value="D"> D) Single variable</label>
+                </div>
+
+                <div class="question" id="q32">
+                    <p>32. In arc consistency, what is removed?</p>
+                    <label><input type="radio" name="q32" value="A"> A) Values without support in connected
+                        domain</label>
+                    <label><input type="radio" name="q32" value="B"> B) All values</label>
+                    <label><input type="radio" name="q32" value="C"> C) Supported values</label>
+                    <label><input type="radio" name="q32" value="D"> D) Domains entirely</label>
+                </div>
+
+                <div class="question" id="q33">
+                    <p>33. What is over-constrained problem approach?</p>
+                    <label><input type="radio" name="q33" value="A"> A) Relax constraints</label>
+                    <label><input type="radio" name="q33" value="B"> B) Add more constraints</label>
+                    <label><input type="radio" name="q33" value="C"> C) Ignore all</label>
+                    <label><input type="radio" name="q33" value="D"> D) Stop solving</label>
+                </div>
+
+                <div class="question" id="q34">
+                    <p>34. How does forward checking enhance backtracking?</p>
+                    <label><input type="radio" name="q34" value="A"> A) Removes values from unassigned domains
+                        early</label>
+                    <label><input type="radio" name="q34" value="B"> B) Adds values</label>
+                    <label><input type="radio" name="q34" value="C"> C) Ignores domains</label>
+                    <label><input type="radio" name="q34" value="D"> D) Backtracks later</label>
+                </div>
+
+                <div class="question" id="q35">
+                    <p>35. In map coloring for Australia, how many colors minimum?</p>
+                    <label><input type="radio" name="q35" value="A"> A) 3 (from example)</label>
+                    <label><input type="radio" name="q35" value="B"> B) 1</label>
+                    <label><input type="radio" name="q35" value="C"> C) 2</label>
+                    <label><input type="radio" name="q35" value="D"> D) 4</label>
+                </div>
+
+                <div class="question" id="q36">
+                    <p>36. What is static variable ordering?</p>
+                    <label><input type="radio" name="q36" value="A"> A) Fixed before search</label>
+                    <label><input type="radio" name="q36" value="B"> B) Changes during search</label>
+                    <label><input type="radio" name="q36" value="C"> C) Random</label>
+                    <label><input type="radio" name="q36" value="D"> D) No order</label>
+                </div>
+
+                <div class="question" id="q37">
+                    <p>37. What is degree heuristic?</p>
+                    <label><input type="radio" name="q37" value="A"> A) Variable with most constraints</label>
+                    <label><input type="radio" name="q37" value="B"> B) Least constraints</label>
+                    <label><input type="radio" name="q37" value="C"> C) Smallest domain</label>
+                    <label><input type="radio" name="q37" value="D"> D) Largest domain</label>
+                </div>
+
+                <div class="question" id="q38">
+                    <p>38. In Sudoku CSP, what are constraints?</p>
+                    <label><input type="radio" name="q38" value="A"> A) Unique in row, column, subgrid</label>
+                    <label><input type="radio" name="q38" value="B"> B) Same in row</label>
+                    <label><input type="radio" name="q38" value="C"> C) No uniques</label>
+                    <label><input type="radio" name="q38" value="D"> D) Random numbers</label>
+                </div>
+
+                <div class="question" id="q39">
+                    <p>39. In Sudoku forward checking, what happens after assign?</p>
+                    <label><input type="radio" name="q39" value="A"> A) Remove value from row/column/block
+                        domains</label>
+                    <label><input type="radio" name="q39" value="B"> B) Add value</label>
+                    <label><input type="radio" name="q39" value="C"> C) Ignore</label>
+                    <label><input type="radio" name="q39" value="D"> D) Backtrack always</label>
+                </div>
+
+                <div class="question" id="q40">
+                    <p>40. What is Minimax assumption?</p>
+                    <label><input type="radio" name="q40" value="A"> A) Opponent plays optimally</label>
+                    <label><input type="radio" name="q40" value="B"> B) Randomly</label>
+                    <label><input type="radio" name="q40" value="C"> C) Poorly</label>
+                    <label><input type="radio" name="q40" value="D"> D) Ignores moves</label>
+                </div>
+
+                <div class="question" id="q41">
+                    <p>41. In game tree, what are terminal states?</p>
+                    <label><input type="radio" name="q41" value="A"> A) Game-ending with utility</label>
+                    <label><input type="radio" name="q41" value="B"> B) Starting states</label>
+                    <label><input type="radio" name="q41" value="C"> C) Middle moves</label>
+                    <label><input type="radio" name="q41" value="D"> D) No utility</label>
+                </div>
+
+                <div class="question" id="q42">
+                    <p>42. In Tic-Tac-Toe Minimax, what search is used?</p>
+                    <label><input type="radio" name="q42" value="A"> A) DFS to leaves</label>
+                    <label><input type="radio" name="q42" value="B"> B) BFS</label>
+                    <label><input type="radio" name="q42" value="C"> C) No search</label>
+                    <label><input type="radio" name="q42" value="D"> D) Random</label>
+                </div>
+
+                <div class="question" id="q43">
+                    <p>43. What condition for alpha-beta pruning?</p>
+                    <label><input type="radio" name="q43" value="A"> A) Alpha >= Beta</label>
+                    <label><input type="radio" name="q43" value="B"> B) Alpha < Beta</label>
+                            <label><input type="radio" name="q43" value="C"> C) Alpha = Beta</label>
+                            <label><input type="radio" name="q43" value="D"> D) No condition</label>
+                </div>
+
+                <div class="question" id="q44">
+                    <p>44. Who updates alpha in alpha-beta?</p>
+                    <label><input type="radio" name="q44" value="A"> A) Max player</label>
+                    <label><input type="radio" name="q44" value="B"> B) Min player</label>
+                    <label><input type="radio" name="q44" value="C"> C) Both</label>
+                    <label><input type="radio" name="q44" value="D"> D) Neither</label>
+                </div>
+
+                <div class="question" id="q45">
+                    <p>45. In dynamic CSPs, what happens?</p>
+                    <label><input type="radio" name="q45" value="A"> A) Variables/constraints change over time</label>
+                    <label><input type="radio" name="q45" value="B"> B) Static always</label>
+                    <label><input type="radio" name="q45" value="C"> C) No changes</label>
+                    <label><input type="radio" name="q45" value="D"> D) Remove all</label>
+                </div>
+
+                <div class="question" id="q46">
+                    <p>46. What is fuzzy CSP?</p>
+                    <label><input type="radio" name="q46" value="A"> A) Degrees of satisfaction</label>
+                    <label><input type="radio" name="q46" value="B"> B) Strict only</label>
+                    <label><input type="radio" name="q46" value="C"> C) No satisfaction</label>
+                    <label><input type="radio" name="q46" value="D"> D) Binary</label>
+                </div>
+
+                <div class="question" id="q47">
+                    <p>47. In 5-Queens example, one solution is?</p>
+                    <label><input type="radio" name="q47" value="A"> A) {1,3,5,2,4}</label>
+                    <label><input type="radio" name="q47" value="B"> B) {1,2,3,4,5}</label>
+                    <label><input type="radio" name="q47" value="C"> C) {5,4,3,2,1}</label>
+                    <label><input type="radio" name="q47" value="D"> D) Random</label>
+                </div>
+
+                <div class="question" id="q48">
+                    <p>48. What is local search in CSP?</p>
+                    <label><input type="radio" name="q48" value="A"> A) Hill Climbing, etc., iterative
+                        improvement</label>
+                    <label><input type="radio" name="q48" value="B"> B) Backtracking only</label>
+                    <label><input type="radio" name="q48" value="C"> C) No search</label>
+                    <label><input type="radio" name="q48" value="D"> D) Global</label>
+                </div>
+
+                <div class="question" id="q49">
+                    <p>49. What is non-binary CSP?</p>
+                    <label><input type="radio" name="q49" value="A"> A) Constraints on 3+ variables</label>
+                    <label><input type="radio" name="q49" value="B"> B) Only two</label>
+                    <label><input type="radio" name="q49" value="C"> C) One</label>
+                    <label><input type="radio" name="q49" value="D"> D) None</label>
+                </div>
+
+                <div class="question" id="q50">
+                    <p>50. In constraint propagation, what is enforced?</p>
+                    <label><input type="radio" name="q50" value="A"> A) Local consistency</label>
+                    <label><input type="radio" name="q50" value="B"> B) Global only</label>
+                    <label><input type="radio" name="q50" value="C"> C) No consistency</label>
+                    <label><input type="radio" name="q50" value="D"> D) Random</label>
+                </div>
+
+                <div class="question" id="q51">
+                    <p>51. In CSP algorithm, when does recursion stop?</p>
+                    <label><input type="radio" name="q51" value="A"> A) All variables assigned without violation</label>
+                    <label><input type="radio" name="q51" value="B"> B) One variable left</label>
+                    <label><input type="radio" name="q51" value="C"> C) Constraints ignored</label>
+                    <label><input type="radio" name="q51" value="D"> D) Domains empty</label>
+                </div>
+
+                <div class="question" id="q52">
+                    <p>52. In arc consistency example: X<Y, Domain(X){1,2,3}, Y{2,3}, what remains?</p>
+                            <label><input type="radio" name="q52" value="A"> A) X removes 3 if no support</label>
+                            <label><input type="radio" name="q52" value="B"> B) All remain</label>
+                            <label><input type="radio" name="q52" value="C"> C) Y removes 2</label>
+                            <label><input type="radio" name="q52" value="D"> D) Domains empty</label>
+                </div>
+
+                <div class="question" id="q53">
+                    <p>53. In over-constrained, what is soft constraint?</p>
+                    <label><input type="radio" name="q53" value="A"> A) Violable with cost</label>
+                    <label><input type="radio" name="q53" value="B"> B) Strict always</label>
+                    <label><input type="radio" name="q53" value="C"> C) No cost</label>
+                    <label><input type="radio" name="q53" value="D"> D) Ignore</label>
+                </div>
+
+                <div class="question" id="q54">
+                    <p>54. In advanced backtracking, what improvement?</p>
+                    <label><input type="radio" name="q54" value="A"> A) Jumps to conflict source</label>
+                    <label><input type="radio" name="q54" value="B"> B) Normal backtrack</label>
+                    <label><input type="radio" name="q54" value="C"> C) No jump</label>
+                    <label><input type="radio" name="q54" value="D"> D) Adds conflicts</label>
+                </div>
+
+                <div class="question" id="q55">
+                    <p>55. In dom/deg heuristic, what is selected?</p>
+                    <label><input type="radio" name="q55" value="A"> A) Smallest domain/degree ratio</label>
+                    <label><input type="radio" name="q55" value="B"> B) Largest</label>
+                    <label><input type="radio" name="q55" value="C"> C) Equal</label>
+                    <label><input type="radio" name="q55" value="D"> D) Random</label>
+                </div>
+
+                <div class="question" id="q56">
+                    <p>56. In Sudoku constraint propagation, if single value left?</p>
+                    <label><input type="radio" name="q56" value="A"> A) Assign and propagate</label>
+                    <label><input type="radio" name="q56" value="B"> B) Ignore</label>
+                    <label><input type="radio" name="q56" value="C"> C) Backtrack</label>
+                    <label><input type="radio" name="q56" value="D"> D) Remove</label>
+                </div>
+
+                <div class="question" id="q57">
+                    <p>57. In Minimax, what propagates up?</p>
+                    <label><input type="radio" name="q57" value="A"> A) Max chooses max, Min chooses min</label>
+                    <label><input type="radio" name="q57" value="B"> B) All max</label>
+                    <label><input type="radio" name="q57" value="C"> C) All min</label>
+                    <label><input type="radio" name="q57" value="D"> D) Average</label>
+                </div>
+
+                <div class="question" id="q58">
+                    <p>58. In alpha-beta example step 4, why prune right of E?</p>
+                    <label><input type="radio" name="q58" value="A"> A) Alpha(5) >= Beta(3)</label>
+                    <label><input type="radio" name="q58" value="B"> B) Alpha < Beta</label>
+                            <label><input type="radio" name="q58" value="C"> C) No prune</label>
+                            <label><input type="radio" name="q58" value="D"> D) Random</label>
+                </div>
+
+                <div class="question" id="q59">
+                    <p>59. In game tree, if Max root, what is value?</p>
+                    <label><input type="radio" name="q59" value="A"> A) Max of children mins</label>
+                    <label><input type="radio" name="q59" value="B"> B) Min of all</label>
+                    <label><input type="radio" name="q59" value="C"> C) Sum</label>
+                    <label><input type="radio" name="q59" value="D"> D) Average</label>
+                </div>
+
+                <div class="question" id="q60">
+                    <p>60. In fuzzy CSP example?</p>
+                    <label><input type="radio" name="q60" value="A"> A) Product recommendation with preferences</label>
+                    <label><input type="radio" name="q60" value="B"> B) Strict map coloring</label>
+                    <label><input type="radio" name="q60" value="C"> C) Binary only</label>
+                    <label><input type="radio" name="q60" value="D"> D) No degrees</label>
+                </div>
+
+                <div class="question" id="q61">
+                    <p>61. In N-Queens for n=5, why step 2 fail?</p>
+                    <label><input type="radio" name="q61" value="A"> A) Q2(2,1) attacks Q1(1,1) same column</label>
+                    <label><input type="radio" name="q61" value="B"> B) No attack</label>
+                    <label><input type="radio" name="q61" value="C"> C) Diagonal ok</label>
+                    <label><input type="radio" name="q61" value="D"> D) Row ok</label>
+                </div>
+
+                <div class="question" id="q62">
+                    <p>62. In weighted constraints, goal?</p>
+                    <label><input type="radio" name="q62" value="A"> A) Maximize high-weight satisfaction</label>
+                    <label><input type="radio" name="q62" value="B"> B) Minimize all</label>
+                    <label><input type="radio" name="q62" value="C"> C) Ignore weights</label>
+                    <label><input type="radio" name="q62" value="D"> D) Equal weights</label>
+                </div>
+
+                <div class="question" id="q63">
+                    <p>63. In dynamic CSP example?</p>
+                    <label><input type="radio" name="q63" value="A"> A) Adaptive scheduling in logistics</label>
+                    <label><input type="radio" name="q63" value="B"> B) Static puzzle</label>
+                    <label><input type="radio" name="q63" value="C"> C) No changes</label>
+                    <label><input type="radio" name="q63" value="D"> D) Fixed map</label>
+                </div>
+
+                <div class="question" id="q64">
+                    <p>64. In Tic-Tac-Toe game tree, terminal values?</p>
+                    <label><input type="radio" name="q64" value="A"> A) Win/loss/draw utilities</label>
+                    <label><input type="radio" name="q64" value="B"> B) No values</label>
+                    <label><input type="radio" name="q64" value="C"> C) Random</label>
+                    <label><input type="radio" name="q64" value="D"> D) Infinite</label>
+                </div>
+
+                <div class="question" id="q65">
+                    <p>65. In alpha-beta, initial alpha/beta?</p>
+                    <label><input type="radio" name="q65" value="A"> A) -∞ / +∞</label>
+                    <label><input type="radio" name="q65" value="B"> B) 0/0</label>
+                    <label><input type="radio" name="q65" value="C"> C) 1/1</label>
+                    <label><input type="radio" name="q65" value="D"> D) ∞/-∞</label>
+                </div>
+
+                <div class="question" id="q66">
+                    <p>66. Why alpha-beta faster than Minimax?</p>
+                    <label><input type="radio" name="q66" value="A"> A) Prunes sub-trees not affecting decision</label>
+                    <label><input type="radio" name="q66" value="B"> B) Checks all</label>
+                    <label><input type="radio" name="q66" value="C"> C) Slower</label>
+                    <label><input type="radio" name="q66" value="D"> D) No prune</label>
+                </div>
+
+                <div class="question" id="q67">
+                    <p>67. In Sudoku backtracking, what heuristic for value?</p>
+                    <label><input type="radio" name="q67" value="A"> A) Least Constraining Value (LCV)</label>
+                    <label><input type="radio" name="q67" value="B"> B) Most constraining</label>
+                    <label><input type="radio" name="q67" value="C"> C) Random</label>
+                    <label><input type="radio" name="q67" value="D"> D) No heuristic</label>
+                </div>
+
+                <div class="question" id="q68">
+                    <p>68. In CSP, how transform non-binary to binary?</p>
+                    <label><input type="radio" name="q68" value="A"> A) Constraint conversion techniques</label>
+                    <label><input type="radio" name="q68" value="B"> B) Ignore</label>
+                    <label><input type="radio" name="q68" value="C"> C) Add variables</label>
+                    <label><input type="radio" name="q68" value="D"> D) Can't</label>
+                </div>
+
+                <div class="question" id="q69">
+                    <p>69. In arc consistency, CSP solved?</p>
+                    <label><input type="radio" name="q69" value="A"> A) Simplifies but not completely</label>
+                    <label><input type="radio" name="q69" value="B"> B) Fully solves</label>
+                    <label><input type="radio" name="q69" value="C"> C) Complicates</label>
+                    <label><input type="radio" name="q69" value="D"> D) Ignores</label>
+                </div>
+
+                <div class="question" id="q70">
+                    <p>70. In 5-Queens, how many steps to first solution?</p>
+                    <label><input type="radio" name="q70" value="A"> A) 15 steps as per example</label>
+                    <label><input type="radio" name="q70" value="B"> B) 5</label>
+                    <label><input type="radio" name="q70" value="C"> C) 1</label>
+                    <label><input type="radio" name="q70" value="D"> D) Infinite</label>
+                </div>
+
+                <div class="question" id="q71">
+                    <p>71. In map coloring constraints, Tasmania?</p>
+                    <label><input type="radio" name="q71" value="A"> A) No constraints (no borders)</label>
+                    <label><input type="radio" name="q71" value="B"> B) Many</label>
+                    <label><input type="radio" name="q71" value="C"> C) Same as others</label>
+                    <label><input type="radio" name="q71" value="D"> D) Ignored</label>
+                </div>
+
+                <div class="question" id="q72">
+                    <p>72. In Minimax for two-ply tree, how compute non-terminal?</p>
+                    <label><input type="radio" name="q72" value="A"> A) Min/Max of children utilities</label>
+                    <label><input type="radio" name="q72" value="B"> B) Sum</label>
+                    <label><input type="radio" name="q72" value="C"> C) Average</label>
+                    <label><input type="radio" name="q72" value="D"> D) Product</label>
+                </div>
+
+                <div class="question" id="q73">
+                    <p>73. What is production rule?</p>
+                    <label><input type="radio" name="q73" value="A"> A) Condition-action pair</label>
+                    <label><input type="radio" name="q73" value="B"> B) Just condition</label>
+                    <label><input type="radio" name="q73" value="C"> C) Just action</label>
+                    <label><input type="radio" name="q73" value="D"> D) No pair</label>
+                </div>
+
+                <div class="question" id="q74">
+                    <p>74. Which search takes less memory?</p>
+                    <label><input type="radio" name="q74" value="A"> A) Depth-first</label>
+                    <label><input type="radio" name="q74" value="B"> B) Breadth-first</label>
+                    <label><input type="radio" name="q74" value="C"> C) A*</label>
+                    <label><input type="radio" name="q74" value="D"> D) Greedy</label>
+                </div>
+
+                <div class="question" id="q75">
+                    <p>75. Best for game playing?</p>
+                    <label><input type="radio" name="q75" value="A"> A) Adversarial search like Minimax</label>
+                    <label><input type="radio" name="q75" value="B"> B) Uninformed</label>
+                    <label><input type="radio" name="q75" value="C"> C) No search</label>
+                    <label><input type="radio" name="q75" value="D"> D) Random</label>
+                </div>
+
+                <div class="question" id="q76">
+                    <p>76. In alpha-beta step 7, why prune G?</p>
+                    <label><input type="radio" name="q76" value="A"> A) At C, Alpha(3) >= Beta(1) after F=1</label>
+                    <label><input type="radio" name="q76" value="B"> B) No prune</label>
+                    <label><input type="radio" name="q76" value="C"> C) Beta infinite</label>
+                    <label><input type="radio" name="q76" value="D"> D) Alpha negative</label>
+                </div>
+
+                <div class="question" id="q77">
+                    <p>77. In Minimax, if tree has Max-Min-Max layers, root value?</p>
+                    <label><input type="radio" name="q77" value="A"> A) Max of mins of maxes</label>
+                    <label><input type="radio" name="q77" value="B"> B) Min of all</label>
+                    <label><input type="radio" name="q77" value="C"> C) Complex propagation</label>
+                    <label><input type="radio" name="q77" value="D"> D) Simple max</label>
+                </div>
+
+                <div class="question" id="q78">
+                    <p>78. In over-constrained with relaxation, example?</p>
+                    <label><input type="radio" name="q78" value="A"> A) Relax classroom prefs in scheduling</label>
+                    <label><input type="radio" name="q78" value="B"> B) Add more prefs</label>
+                    <label><input type="radio" name="q78" value="C"> C) Strict all</label>
+                    <label><input type="radio" name="q78" value="D"> D) No relax</label>
+                </div>
+
+                <div class="question" id="q79">
+                    <p>79. In arc consistency for X<Y, after check X→Y, what if X=1 supported by Y=2,3; X=2 by Y=3; X=3
+                            none?</p>
+                            <label><input type="radio" name="q79" value="A"> A) Remove X=3</label>
+                            <label><input type="radio" name="q79" value="B"> B) Remove Y=3</label>
+                            <label><input type="radio" name="q79" value="C"> C) Keep all</label>
+                            <label><input type="radio" name="q79" value="D"> D) Empty domains</label>
+                </div>
+
+                <div class="question" id="q80">
+                    <p>80. In N-Queens constraint, why |Qi-Qj|≠|i-j|?</p>
+                    <label><input type="radio" name="q80" value="A"> A) Prevents diagonal attacks</label>
+                    <label><input type="radio" name="q80" value="B"> B) Row attacks</label>
+                    <label><input type="radio" name="q80" value="C"> C) Column</label>
+                    <label><input type="radio" name="q80" value="D"> D) No attacks</label>
+                </div>
+
+                <div class="question" id="q81">
+                    <p>81. In forward checking limitation?</p>
+                    <label><input type="radio" name="q81" value="A"> A) Still needs backtrack if domain empty</label>
+                    <label><input type="radio" name="q81" value="B"> B) No backtrack</label>
+                    <label><input type="radio" name="q81" value="C"> C) Always solves</label>
+                    <label><input type="radio" name="q81" value="D"> D) Ignores empty</label>
+                </div>
+
+                <div class="question" id="q82">
+                    <p>82. In dom/deg, if var1 domain=2, degree=3; var2=3, degree=2; select?</p>
+                    <label><input type="radio" name="q82" value="A"> A) Var1 (2/3 < 3/2)</label>
+                            <label><input type="radio" name="q82" value="B"> B) Var2</label>
+                            <label><input type="radio" name="q82" value="C"> C) Equal</label>
+                            <label><input type="radio" name="q82" value="D"> D) Random</label>
+                </div>
+
+                <div class="question" id="q83">
+                    <p>83. In Sudoku propagation, if row has cells A{1,2}, B{1,2}, C{1}, assign C=1, what happens to A
+                        and B?
+                    </p>
+                    <label><input type="radio" name="q83" value="A"> A) Remove 1 from A and B, assign if single
+                        left</label>
+                    <label><input type="radio" name="q83" value="B"> B) Keep 1</label>
+                    <label><input type="radio" name="q83" value="C"> C) Empty</label>
+                    <label><input type="radio" name="q83" value="D"> D) Ignore</label>
+                </div>
+
+                <div class="question" id="q84">
+                    <p>84. In alpha-beta, node values passed up?</p>
+                    <label><input type="radio" name="q84" value="A"> A) Node values, not alpha/beta</label>
+                    <label><input type="radio" name="q84" value="B"> B) Only alpha</label>
+                    <label><input type="radio" name="q84" value="C"> C) Only beta</label>
+                    <label><input type="radio" name="q84" value="D"> D) None</label>
+                </div>
+
+                <div class="question" id="q85">
+                    <p>85. In fuzzy CSP, how differ from standard?</p>
+                    <label><input type="radio" name="q85" value="A"> A) Satisfaction degrees, not binary</label>
+                    <label><input type="radio" name="q85" value="B"> B) Strict violation</label>
+                    <label><input type="radio" name="q85" value="C"> C) No degrees</label>
+                    <label><input type="radio" name="q85" value="D"> D) Same</label>
+                </div>
+
+                <div class="question" id="q86">
+                    <p>86. In 5-Queens step 11, place Q4 at (4,2) succeeds, but why not (4,1)? Attacks from?</p>
+                    <label><input type="radio" name="q86" value="A"> A) Q1=1 col1, diagonal attacks</label>
+                    <label><input type="radio" name="q86" value="B"> B) Diagonal with Q2</label>
+                    <label><input type="radio" name="q86" value="C"> C) No attack</label>
+                    <label><input type="radio" name="q86" value="D"> D) Success</label>
+                </div>
+
+                <div class="question" id="q87">
+                    <p>87. In weighted constraints example?</p>
+                    <label><input type="radio" name="q87" value="A"> A) Deadline higher than overtime</label>
+                    <label><input type="radio" name="q87" value="B"> B) Equal</label>
+                    <label><input type="radio" name="q87" value="C"> C) No weights</label>
+                    <label><input type="radio" name="q87" value="D"> D) Reverse</label>
+                </div>
+
+                <div class="question" id="q88">
+                    <p>88. In binary CSP visualization?</p>
+                    <label><input type="radio" name="q88" value="A"> A) Constraint graph nodes=vars,
+                        edges=constraints</label>
+                    <label><input type="radio" name="q88" value="B"> B) No graph</label>
+                    <label><input type="radio" name="q88" value="C"> C) Tree only</label>
+                    <label><input type="radio" name="q88" value="D"> D) List</label>
+                </div>
+
+                <div class="question" id="q89">
+                    <p>89. In Tic-Tac-Toe Minimax, if X to move, board partial, how compute utility if not terminal?</p>
+                    <label><input type="radio" name="q89" value="A"> A) Recurse to depth, evaluate heuristic if
+                        cutoff</label>
+                    <label><input type="radio" name="q89" value="B"> B) Only terminals</label>
+                    <label><input type="radio" name="q89" value="C"> C) Zero</label>
+                    <label><input type="radio" name="q89" value="D"> D) Infinite</label>
+                </div>
+
+                <div class="question" id="q90">
+                    <p>90. In alpha-beta, why pass alpha,beta to children but backtrack node values?</p>
+                    <label><input type="radio" name="q90" value="A"> A) To bound search, but value is actual
+                        min/max</label>
+                    <label><input type="radio" name="q90" value="B"> B) Pass values only</label>
+                    <label><input type="radio" name="q90" value="C"> C) No bounding</label>
+                    <label><input type="radio" name="q90" value="D"> D) Random</label>
+                </div>
+
+                <div class="question" id="q91">
+                    <p>91. In CSP local search like Simulated Annealing, how handle over-constrained?</p>
+                    <label><input type="radio" name="q91" value="A"> A) Allow violations, minimize cost
+                        iteratively</label>
+                    <label><input type="radio" name="q91" value="B"> B) Strict no violation</label>
+                    <label><input type="radio" name="q91" value="C"> C) Backtrack</label>
+                    <label><input type="radio" name="q91" value="D"> D) No handle</label>
+                </div>
+
+                <div class="question" id="q92">
+                    <p>92. In non-binary CSP example like Sudoku AllDifferent, how convert to binary?</p>
+                    <label><input type="radio" name="q92" value="A"> A) Add hidden variables for pairs</label>
+                    <label><input type="radio" name="q92" value="B"> B) Can't convert</label>
+                    <label><input type="radio" name="q92" value="C"> C) Ignore</label>
+                    <label><input type="radio" name="q92" value="D"> D) Direct binary</label>
+                </div>
+
+                <div class="question" id="q93">
+                    <p>93. In arc consistency, if after making all arcs consistent, some domain empty, what?</p>
+                    <label><input type="radio" name="q93" value="A"> A) Inconsistent, no solution</label>
+                    <label><input type="radio" name="q93" value="B"> B) Solution found</label>
+                    <label><input type="radio" name="q93" value="C"> C) Continue search</label>
+                    <label><input type="radio" name="q93" value="D"> D) Add values</label>
+                </div>
+
+                <div class="question" id="q94">
+                    <p>94. In map coloring Australia, with constraints SA ≠ Q, SA ≠ NSW, etc., why can Q=red, NSW=green,
+                        V=red
+                        valid?</p>
+                    <label><input type="radio" name="q94" value="A"> A) Q not adjacent V, NSW adjacent V but
+                        green≠red</label>
+                    <label><input type="radio" name="q94" value="B"> B) All adjacent same</label>
+                    <label><input type="radio" name="q94" value="C"> C) Invalid</label>
+                    <label><input type="radio" name="q94" value="D"> D) Needs 4 colors</label>
+                </div>
+
+                <div class="question" id="q95">
+                    <p>95. What is the utility of alpha and beta cuts in Minimax?</p>
+                    <label><input type="radio" name="q95" value="A"> A) Avoid exploring branches where better already
+                        found
+                        elsewhere</label>
+                    <label><input type="radio" name="q95" value="B"> B) Increase space</label>
+                    <label><input type="radio" name="q95" value="C"> C) Change result</label>
+                    <label><input type="radio" name="q95" value="D"> D) No utility</label>
+                </div>
+
+                <div class="question" id="q96">
+                    <p>96. In two-ply game tree, if terminals under first Min: 5,7; second Min: 4,6,3; third:2, what Max
+                        root?
+                    </p>
+                    <label><input type="radio" name="q96" value="A"> A) Max(min(5,7)=5, min(4,6,3)=3,
+                        min(2)=2)=5</label>
+                    <label><input type="radio" name="q96" value="B"> B) Min of maxxes</label>
+                    <label><input type="radio" name="q96" value="C"> C) 3</label>
+                    <label><input type="radio" name="q96" value="D"> D) Average</label>
+                </div>
+
+                <div class="question" id="q97">
+                    <p>97. In dynamic variable ordering with MRV and degree tie-breaker, if MRV tie, select?</p>
+                    <label><input type="radio" name="q97" value="A"> A) Highest degree</label>
+                    <label><input type="radio" name="q97" value="B"> B) Lowest</label>
+                    <label><input type="radio" name="q97" value="C"> C) Dom/deg</label>
+                    <label><input type="radio" name="q97" value="D"> D) Static</label>
+                </div>
+
+                <div class="question" id="q98">
+                    <p>98. In constraint propagation for Sudoku, if naked pair {2,5} in two cells row, what eliminate
+                        elsewhere?
+                    </p>
+                    <label><input type="radio" name="q98" value="A"> A) Remove 2,5 from other row cells</label>
+                    <label><input type="radio" name="q98" value="B"> B) Add them</label>
+                    <label><input type="radio" name="q98" value="C"> C) Ignore</label>
+                    <label><input type="radio" name="q98" value="D"> D) Assign</label>
+                </div>
+
+                <div class="question" id="q99">
+                    <p>99. In game playing with perfect information, why Minimax optimal?</p>
+                    <label><input type="radio" name="q99" value="A"> A) Assumes rational opponent, finds best against
+                        worst-case</label>
+                    <label><input type="radio" name="q99" value="B"> B) Random opponent</label>
+                    <label><input type="radio" name="q99" value="C"> C) Imperfect info</label>
+                    <label><input type="radio" name="q99" value="D"> D) No optimal</label>
+                </div>
+
+                <div class="question" id="q100">
+                    <p>100. In alpha-beta final example, optimal for max?</p>
+                    <label><input type="radio" name="q100" value="A"> A) 3</label>
+                    <label><input type="radio" name="q100" value="B"> B) 1</label>
+                    <label><input type="radio" name="q100" value="C"> C) 5</label>
+                    <label><input type="radio" name="q100" value="D"> D) Infinite</label>
+                </div>
+
+                <div class="question" id="q101">
+                    <p>101. In alpha-beta pruning example, at step 3 after backtracking to B, what are the updated alpha
+                        and
+                        beta values, and why does it proceed to E?</p>
+                    <label><input type="radio" name="q101" value="A"> A) Alpha=-∞, Beta=3; to explore next
+                        successor</label>
+                    <label><input type="radio" name="q101" value="B"> B) Alpha=3, Beta=∞; already pruned</label>
+                    <label><input type="radio" name="q101" value="C"> C) Alpha=5, Beta=3; prune immediately</label>
+                    <label><input type="radio" name="q101" value="D"> D) Alpha=-∞, Beta=∞; reset</label>
+                </div>
+
+                <div class="question" id="q102">
+                    <p>102. For a CSP with variables X1 domain {1,2}, X2 {1,2,3}, constraint X1 < X2, and higher-order
+                            on X1+X2=3, what arc consistency does to domains after propagating binary first?</p>
+                            <label><input type="radio" name="q102" value="A"> A) X1 {1,2}, X2 {2,3} then higher-order
+                                removes
+                                X1=2,X2=3 if not sum=3</label>
+                            <label><input type="radio" name="q102" value="B"> B) No change</label>
+                            <label><input type="radio" name="q102" value="C"> C) Empty domains</label>
+                            <label><input type="radio" name="q102" value="D"> D) Add values</label>
+                </div>
+
+                <div class="question" id="q103">
+                    <p>103. In over-constrained scheduling with weighted constraints (deadline weight 10, overtime
+                        weight 5), if
+                        violating overtime but meeting deadline, compared to reverse, which is preferred?</p>
+                    <label><input type="radio" name="q103" value="A"> A) Meet deadline (higher weight)</label>
+                    <label><input type="radio" name="q103" value="B"> B) Minimize overtime</label>
+                    <label><input type="radio" name="q103" value="C"> C) Both equal</label>
+                    <label><input type="radio" name="q103" value="D"> D) No preference</label>
+                </div>
+
+                <div class="question" id="q104">
+                    <p>104. In N-Queens for n=5, why does placing Q3 at (3,5) succeed after failures at 1-4, considering
+                        attacks
+                        from Q1=1, Q2=3?</p>
+                    <label><input type="radio" name="q104" value="A"> A) No same column, diagonal: |5-1|≠|3-1|,
+                        |5-3|≠|3-2|</label>
+                    <label><input type="radio" name="q104" value="B"> B) Attacks on diagonal</label>
+                    <label><input type="radio" name="q104" value="C"> C) Same row</label>
+                    <label><input type="radio" name="q104" value="D"> D) Column attack</label>
+                </div>
+
+                <div class="question" id="q105">
+                    <p>105. In forward checking for map coloring, assign WA=red, what happens to NT and SA domains if
+                        colors
+                        {red,green,blue}?</p>
+                    <label><input type="radio" name="q105" value="A"> A) Remove red from NT and SA</label>
+                    <label><input type="radio" name="q105" value="B"> B) Remove all colors</label>
+                    <label><input type="radio" name="q105" value="C"> C) Add red</label>
+                    <label><input type="radio" name="q105" value="D"> D) No change</label>
+                </div>
+
+                <div class="question" id="q106">
+                    <p>106. In dom/deg heuristic, if two vars same dom/deg ratio, how tie-break with degree?</p>
+                    <label><input type="radio" name="q106" value="A"> A) Choose higher degree (most
+                        constraining)</label>
+                    <label><input type="radio" name="q106" value="B"> B) Lower degree</label>
+                    <label><input type="radio" name="q106" value="C"> C) Random</label>
+                    <label><input type="radio" name="q106" value="D"> D) MRV again</label>
+                </div>
+
+                <div class="question" id="q107">
+                    <p>107. In Sudoku propagation, if row has cells A{1,2}, B{1,2}, C{1}, assign C=1, what happens to A
+                        and B?
+                    </p>
+                    <label><input type="radio" name="q107" value="A"> A) Remove 1 from A and B, assign if single
+                        left</label>
+                    <label><input type="radio" name="q107" value="B"> B) Keep 1</label>
+                    <label><input type="radio" name="q107" value="C"> C) Empty</label>
+                    <label><input type="radio" name="q107" value="D"> D) Ignore</label>
+                </div>
+
+                <div class="question" id="q108">
+                    <p>108. In Minimax for a tree with root Max, children Min values 4, min(5,3)=3, min(2,6)=2, what
+                        root value?
+                    </p>
+                    <label><input type="radio" name="q108" value="A"> A) Max(4,3,2)=4</label>
+                    <label><input type="radio" name="q108" value="B"> B) Min of all</label>
+                    <label><input type="radio" name="q108" value="C"> C) 3</label>
+                    <label><input type="radio" name="q108" value="D"> D) 2</label>
+                </div>
+
+                <div class="question" id="q109">
+                    <p>109. In alpha-beta, if during Min turn, beta updated to 2, and child returns 1, then another
+                        child 3, but
+                        alpha=0, does it prune?</p>
+                    <label><input type="radio" name="q109" value="A"> A) No prune, but beta=min(beta,3)=2 after</label>
+                    <label><input type="radio" name="q109" value="B"> B) Prune if 3 > beta</label>
+                    <label><input type="radio" name="q109" value="C"> C) Always prune</label>
+                    <label><input type="radio" name="q109" value="D"> D) Only if alpha>=beta</label>
+                </div>
+
+                <div class="question" id="q110">
+                    <p>110. In fuzzy CSP for recommendation, if preference soft constraint degree 0.8 for feature A, 0.6
+                        for B,
+                        how combine for solution?</p>
+                    <label><input type="radio" name="q110" value="A"> A) Aggregate degrees, e.g., min or weighted
+                        sum</label>
+                    <label><input type="radio" name="q110" value="B"> B) Strict 1 or 0</label>
+                    <label><input type="radio" name="q110" value="C"> C) Ignore degrees</label>
+                    <label><input type="radio" name="q110" value="D"> D) Max only</label>
+                </div>
+
+                <div class="question" id="q111">
+                    <p>111. In 5-Queens step 11, place Q4 at (4,2) succeeds, but why not (4,1)? Attacks from?</p>
+                    <label><input type="radio" name="q111" value="A"> A) Q1=1 col1, diagonal attacks</label>
+                    <label><input type="radio" name="q111" value="B"> B) Diagonal with Q2</label>
+                    <label><input type="radio" name="q111" value="C"> C) No attack</label>
+                    <label><input type="radio" name="q111" value="D"> D) Success</label>
+                </div>
+
+                <div class="question" id="q112">
+                    <p>112. In binary CSP graph, if cycle exists, how affects solving compared to tree?</p>
+                    <label><input type="radio" name="q112" value="A"> A) Harder, may need more propagation</label>
+                    <label><input type="radio" name="q112" value="B"> B) Easier</label>
+                    <label><input type="radio" name="q112" value="C"> C) Same</label>
+                    <label><input type="radio" name="q112" value="D"> D) Unsolvable</label>
+                </div>
+
+                <div class="question" id="q113">
+                    <p>113. In Tic-Tac-Toe Minimax, if X to move, board partial, how compute utility if not terminal?
+                    </p>
+                    <label><input type="radio" name="q113" value="A"> A) Recurse to depth, evaluate heuristic if
+                        cutoff</label>
+                    <label><input type="radio" name="q113" value="B"> B) Only terminals</label>
+                    <label><input type="radio" name="q113" value="C"> C) Zero</label>
+                    <label><input type="radio" name="q113" value="D"> D) Infinite</label>
+                </div>
+
+                <div class="question" id="q114">
+                    <p>114. In alpha-beta, why pass alpha,beta to children but backtrack node values?</p>
+                    <label><input type="radio" name="q114" value="A"> A) To bound search, but value is actual
+                        min/max</label>
+                    <label><input type="radio" name="q114" value="B"> B) Pass values only</label>
+                    <label><input type="radio" name="q114" value="C"> C) No bounding</label>
+                    <label><input type="radio" name="q114" value="D"> D) Random</label>
+                </div>
+
+                <div class="question" id="q115">
+                    <p>115. In CSP local search like Simulated Annealing, how handle over-constrained?</p>
+                    <label><input type="radio" name="q115" value="A"> A) Allow violations, minimize cost
+                        iteratively</label>
+                    <label><input type="radio" name="q115" value="B"> B) Strict no violation</label>
+                    <label><input type="radio" name="q115" value="C"> C) Backtrack</label>
+                    <label><input type="radio" name="q115" value="D"> D) No handle</label>
+                </div>
+                <div class="question" id="q116">
+                    <p>116. In non-binary CSP example like Sudoku AllDifferent, how convert to binary?</p>
+                    <label><input type="radio" name="q116" value="A"> A) Add hidden variables for pairs</label>
+                    <label><input type="radio" name="q116" value="B"> B) Can't convert</label>
+                    <label><input type="radio" name="q116" value="C"> C) Ignore</label>
+                    <label><input type="radio" name="q116" value="D"> D) Direct binary</label>
+
+                </div>
+
+                <div class="question" id="q117">
+                    <p>117. In arc consistency, if after making all arcs consistent, some domain empty, what?</p>
+                    <label><input type="radio" name="q117" value="A"> A) Inconsistent, no solution</label>
+                    <label><input type="radio" name="q117" value="B"> B) Solution found</label>
+                    <label><input type="radio" name="q117" value="C"> C) Continue search</label>
+                    <label><input type="radio" name="q117" value="D"> D) Add values</label>
+
+                </div>
+
+                <div class="question" id="q118">
+                    <p>118. In map coloring Australia, with constraints SA ≠ Q, SA ≠ NSW, etc., why can Q=red,
+                        NSW=green, V=red valid?</p>
+                    <label><input type="radio" name="q118" value="A"> A) Q not adjacent V, NSW adjacent V but
+                        green≠red</label>
+                    <label><input type="radio" name="q118" value="B"> B) All adjacent same</label>
+                    <label><input type="radio" name="q118" value="C"> C) Invalid</label>
+                    <label><input type="radio" name="q118" value="D"> D) Needs 4 colors</label>
+
+                </div>
+
+                <div class="question" id="q119">
+                    <p>119. What is the utility of alpha and beta cuts in Minimax?</p>
+                    <label><input type="radio" name="q119" value="A"> A) Avoid exploring branches where better already
+                        found elsewhere</label>
+                    <label><input type="radio" name="q119" value="B"> B) Increase space</label>
+                    <label><input type="radio" name="q119" value="C"> C) Change result</label>
+                    <label><input type="radio" name="q119" value="D"> D) No utility</label>
+
+                </div>
+
+                <div class="question" id="q120">
+                    <p>120. In two-ply game tree, if terminals under first Min: 5,7; second Min: 4,6,3; third:2, what
+                        Max root?</p>
+                    <label><input type="radio" name="q120" value="A"> A) Max(min(5,7)=5, min(4,6,3)=3,
+                        min(2)=2)=5</label>
+                    <label><input type="radio" name="q120" value="B"> B) Min of maxes</label>
+                    <label><input type="radio" name="q120" value="C"> C) 3</label>
+                    <label><input type="radio" name="q120" value="D"> D) Average</label>
+
+                </div>
+
+                <div class="question" id="q121">
+                    <p>121. In dynamic variable ordering with MRV and degree tie-breaker, if MRV tie, select?</p>
+                    <label><input type="radio" name="q121" value="A"> A) Highest degree</label>
+                    <label><input type="radio" name="q121" value="B"> B) Lowest</label>
+                    <label><input type="radio" name="q121" value="C"> C) Dom/deg</label>
+                    <label><input type="radio" name="q121" value="D"> D) Static</label>
+
+                </div>
+
+                <div class="question" id="q122">
+                    <p>122. In constraint propagation for Sudoku, if naked pair {2,5} in two cells row, what eliminate
+                        elsewhere?</p>
+                    <label><input type="radio" name="q122" value="A"> A) Remove 2,5 from other row cells</label>
+                    <label><input type="radio" name="q122" value="B"> B) Add them</label>
+                    <label><input type="radio" name="q122" value="C"> C) Ignore</label>
+                    <label><input type="radio" name="q122" value="D"> D) Assign</label>
+
+                </div>
+
+                <div class="question" id="q123">
+                    <p>123. In game playing with perfect information, why Minimax optimal?</p>
+                    <label><input type="radio" name="q123" value="A"> A) Assumes rational opponent, finds best against
+                        worst-case</label>
+                    <label><input type="radio" name="q123" value="B"> B) Random opponent</label>
+                    <label><input type="radio" name="q123" value="C"> C) Imperfect info</label>
+                    <label><input type="radio" name="q123" value="D"> D) No optimal</label>
+
+                </div>
+
+                <div class="question" id="q124">
+                    <p>124. In alpha-beta final tree, nodes computed vs pruned, why optimal 3?</p>
+                    <label><input type="radio" name="q124" value="A"> A) Max(3 from left,1 from right)=3, pruned don't
+                        affect</label>
+                    <label><input type="radio" name="q124" value="B"> B) 5</label>
+                    <label><input type="radio" name="q124" value="C"> C) 1</label>
+                    <label><input type="radio" name="q124" value="D"> D) Infinite</label>
+
+                </div>
+
+                <div class="question" id="q125">
+                    <p>125. In production rule for game playing, what consists?</p>
+                    <label><input type="radio" name="q125" value="A"> A) If-then rules for knowledge
+                        representation</label>
+                    <label><input type="radio" name="q125" value="B"> B) No rules</label>
+                    <label><input type="radio" name="q125" value="C"> C) Only condition</label>
+                    <label><input type="radio" name="q125" value="D"> D) Only action</label>
+
+                </div>
+            </form>
+            <div class="navigation">
+                <button type="button" class="btn prev" id="prevBtn">Previous</button>
+                <button type="button" class="btn next" id="nextBtn">Next</button>
+            </div>
+            <button type="button" id="submitBtn">Submit Quiz</button>
+        </div>
+
+        <div class="right box">
+            <!-- Question navigation buttons will be added by JavaScript -->
+        </div>
+    </div>
+    <div id="result"></div>
+
+    </div>
+    <audio src=""></audio>
+    </div>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
